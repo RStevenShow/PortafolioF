@@ -1,10 +1,12 @@
 import React from 'react';
 import { TextAnimate } from './ui/text-animate.jsx';
 import { AnimatedGridPattern } from './ui/animated-grid-pattern.jsx'; // Asegúrate de tener instalada esta librería
+import { useNavigate } from "react-router-dom";
 
 import { cn } from '../lib/utils'; // Asegúrate de que esta carpeta exista
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 md:py-32 max-w-7xl mx-auto gap-12 overflow-hidden">
       
@@ -38,9 +40,12 @@ const Hero = () => {
           continuo de nuevas tecnologías.
         </p>
 
-        <button onClick={() => window.location.href = '/contacto'} className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-all active:scale-95 shadow-lg shadow-white/5">
-          Contacto
-        </button>
+        <button
+      onClick={() => navigate("/contacto")}
+      className="bg-white text-black px-8 py-3 rounded-full font-semibold"
+    >
+      Contacto
+    </button>
       </div>
 
       {/* LADO DERECHO: TU FOTO */}
