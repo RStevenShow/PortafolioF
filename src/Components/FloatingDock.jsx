@@ -9,8 +9,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"; // Asegúrate de tener estos componentes de Radix/Shadcn
-import { Dock, DockIcon } from "@/components/ui/dock"; // Asegúrate de tener estos componentes de Dock
+} from "@/components/ui/tooltip"; 
+import { Dock, DockIcon } from "@/Components/ui/dock"; 
 
 const DATA = {
   navbar: [
