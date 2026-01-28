@@ -4,10 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Download, FileText, ArrowLeft, ShieldCheck } from "lucide-react";
 import { BackgroundPaths } from "@/Components/background-paths";
-import { Link } from "react-router-dom"; // O "next/link" si usas Next.js
+import { Link } from "react-router-dom"; 
 
 export default function CV() {
-  const cvPath = "/cv/cvRamonLopez.pdf"; // Asegúrate de que el PDF esté en la carpeta 'public'
+  const cvPath = "/cv/CVRamonLopez.pdf"; 
 
   return (
     <div className="relative min-h-screen w-full bg-black overflow-x-hidden flex flex-col items-center">
